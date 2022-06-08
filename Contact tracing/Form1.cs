@@ -4,6 +4,7 @@ namespace Contact_tracing
 {
     public partial class Form1 : Form
     {
+        string Checked = "";
         public Form1()
         {
             InitializeComponent();
@@ -18,7 +19,14 @@ namespace Contact_tracing
             file.WriteLine("Age:" + box4.Text);
             file.WriteLine("Date:" + box5.Text);
             file.WriteLine("Time in/out:" + box6.Text);
-            file.Close();   
+            file.WriteLine("Question 1." + ques1.Text + ques1.Checked);
+            file.WriteLine("Question 2." + ques1.Text + ques2.Checked);
+            file.WriteLine("Question 3." + ques1.Text + ques3.Checked);
+            file.WriteLine("Question 4." + ques1.Text + ques4.Checked);
+            file.WriteLine("Question 5." + ques1.Text + ques5.Checked);
+            file.Close();
+
+            MessageBox.Show("Thank you for answering.","Saved");
         }
     }
 }
