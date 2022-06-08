@@ -47,6 +47,7 @@
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.savebutton = new System.Windows.Forms.Button();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label1
@@ -212,11 +213,23 @@
             this.savebutton.UseVisualStyleBackColor = false;
             this.savebutton.Click += new System.EventHandler(this.button1_Click);
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(230, 396);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(117, 24);
+            this.radioButton1.TabIndex = 26;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(507, 527);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.savebutton);
             this.Controls.Add(this.checkBox5);
             this.Controls.Add(this.checkBox4);
@@ -264,5 +277,6 @@
         private CheckBox checkBox4;
         private CheckBox checkBox5;
         private Button savebutton;
+        private RadioButton radioButton1;
     }
 }
