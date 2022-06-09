@@ -1,6 +1,6 @@
 ﻿namespace Contact_tracing
 {
-    partial class Form1
+    partial class Tracingform
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tracingform));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,11 +42,10 @@
             this.box5 = new System.Windows.Forms.TextBox();
             this.box6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.ques1 = new System.Windows.Forms.CheckBox();
+            this.ques2 = new System.Windows.Forms.CheckBox();
             this.ques3 = new System.Windows.Forms.CheckBox();
             this.ques4 = new System.Windows.Forms.CheckBox();
             this.ques5 = new System.Windows.Forms.CheckBox();
-            this.ques6 = new System.Windows.Forms.CheckBox();
             this.savebutton = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -54,10 +53,13 @@
             this.firstN = new System.Windows.Forms.Label();
             this.box7 = new System.Windows.Forms.TextBox();
             this.lastN = new System.Windows.Forms.Label();
-            this.ques2 = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.rbutt1 = new System.Windows.Forms.RadioButton();
+            this.ques1 = new System.Windows.Forms.Label();
+            this.rbutt2 = new System.Windows.Forms.RadioButton();
+            this.rbutt3 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -148,7 +150,7 @@
             // 
             // box5
             // 
-            this.box5.Location = new System.Drawing.Point(368, 120);
+            this.box5.Location = new System.Drawing.Point(368, 116);
             this.box5.Name = "box5";
             this.box5.Size = new System.Drawing.Size(125, 27);
             this.box5.TabIndex = 17;
@@ -171,51 +173,42 @@
     "e midst of COVID-19 Pandemic. We take your informations confidential and only us" +
     "ed when it needed.";
             // 
-            // ques1
+            // ques2
             // 
-            this.ques1.Location = new System.Drawing.Point(12, 299);
-            this.ques1.Name = "ques1";
-            this.ques1.Size = new System.Drawing.Size(350, 30);
-            this.ques1.TabIndex = 20;
-            this.ques1.Text = "Are you fully vaccinated?";
-            this.ques1.UseVisualStyleBackColor = true;
+            this.ques2.Location = new System.Drawing.Point(12, 365);
+            this.ques2.Name = "ques2";
+            this.ques2.Size = new System.Drawing.Size(485, 63);
+            this.ques2.TabIndex = 21;
+            this.ques2.Text = "Do you feel any symtomps of covid (cough, headache, fever etc.) in a past few day" +
+    "s?";
+            this.ques2.UseVisualStyleBackColor = true;
             // 
             // ques3
             // 
-            this.ques3.Location = new System.Drawing.Point(12, 357);
+            this.ques3.Location = new System.Drawing.Point(12, 431);
             this.ques3.Name = "ques3";
-            this.ques3.Size = new System.Drawing.Size(485, 63);
-            this.ques3.TabIndex = 21;
-            this.ques3.Text = "Do you feel any symtomps of covid (cough, headache, fever etc.) in a past few day" +
-    "s?";
+            this.ques3.Size = new System.Drawing.Size(350, 30);
+            this.ques3.TabIndex = 22;
+            this.ques3.Text = "Did you already experience having coronavirus?";
             this.ques3.UseVisualStyleBackColor = true;
             // 
             // ques4
             // 
-            this.ques4.Location = new System.Drawing.Point(12, 420);
+            this.ques4.Location = new System.Drawing.Point(12, 467);
             this.ques4.Name = "ques4";
             this.ques4.Size = new System.Drawing.Size(350, 30);
-            this.ques4.TabIndex = 22;
-            this.ques4.Text = "Did you already experience having coronavirus?";
+            this.ques4.TabIndex = 23;
+            this.ques4.Text = "Do you encounter people that is covid positive?";
             this.ques4.UseVisualStyleBackColor = true;
             // 
             // ques5
             // 
-            this.ques5.Location = new System.Drawing.Point(12, 456);
+            this.ques5.Location = new System.Drawing.Point(12, 492);
             this.ques5.Name = "ques5";
-            this.ques5.Size = new System.Drawing.Size(350, 30);
-            this.ques5.TabIndex = 23;
-            this.ques5.Text = "Do you encounter people that is covid positive?";
+            this.ques5.Size = new System.Drawing.Size(350, 53);
+            this.ques5.TabIndex = 24;
+            this.ques5.Text = "Have you travel outside the country for the past 14 days?";
             this.ques5.UseVisualStyleBackColor = true;
-            // 
-            // ques6
-            // 
-            this.ques6.Location = new System.Drawing.Point(12, 492);
-            this.ques6.Name = "ques6";
-            this.ques6.Size = new System.Drawing.Size(350, 53);
-            this.ques6.TabIndex = 24;
-            this.ques6.Text = "Have you travel outside the country for the past 14 days?";
-            this.ques6.UseVisualStyleBackColor = true;
             // 
             // savebutton
             // 
@@ -264,7 +257,7 @@
             this.firstN.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.firstN.Location = new System.Drawing.Point(66, 93);
             this.firstN.Name = "firstN";
-            this.firstN.Size = new System.Drawing.Size(66, 17);
+            this.firstN.Size = new System.Drawing.Size(62, 15);
             this.firstN.TabIndex = 31;
             this.firstN.Text = "First name";
             // 
@@ -281,19 +274,9 @@
             this.lastN.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.lastN.Location = new System.Drawing.Point(184, 93);
             this.lastN.Name = "lastN";
-            this.lastN.Size = new System.Drawing.Size(65, 17);
+            this.lastN.Size = new System.Drawing.Size(62, 15);
             this.lastN.TabIndex = 33;
             this.lastN.Text = "Last name";
-            // 
-            // ques2
-            // 
-            this.ques2.AutoSize = true;
-            this.ques2.Location = new System.Drawing.Point(12, 335);
-            this.ques2.Name = "ques2";
-            this.ques2.Size = new System.Drawing.Size(308, 24);
-            this.ques2.TabIndex = 34;
-            this.ques2.Text = "or at least done to a first dose of vaccine?";
-            this.ques2.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -301,7 +284,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(0, -2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(511, 92);
+            this.pictureBox1.Size = new System.Drawing.Size(511, 88);
             this.pictureBox1.TabIndex = 35;
             this.pictureBox1.TabStop = false;
             // 
@@ -327,17 +310,62 @@
             this.label11.TabIndex = 37;
             this.label11.Text = "Form";
             // 
-            // Form1
+            // rbutt1
+            // 
+            this.rbutt1.AutoSize = true;
+            this.rbutt1.Location = new System.Drawing.Point(12, 335);
+            this.rbutt1.Name = "rbutt1";
+            this.rbutt1.Size = new System.Drawing.Size(125, 24);
+            this.rbutt1.TabIndex = 38;
+            this.rbutt1.TabStop = true;
+            this.rbutt1.Text = "First dose only";
+            this.rbutt1.UseVisualStyleBackColor = true;
+            // 
+            // ques1
+            // 
+            this.ques1.AutoSize = true;
+            this.ques1.Location = new System.Drawing.Point(12, 312);
+            this.ques1.Name = "ques1";
+            this.ques1.Size = new System.Drawing.Size(174, 20);
+            this.ques1.TabIndex = 39;
+            this.ques1.Text = "Are you fully vaccinated?";
+            // 
+            // rbutt2
+            // 
+            this.rbutt2.AutoSize = true;
+            this.rbutt2.Location = new System.Drawing.Point(135, 335);
+            this.rbutt2.Name = "rbutt2";
+            this.rbutt2.Size = new System.Drawing.Size(135, 24);
+            this.rbutt2.TabIndex = 40;
+            this.rbutt2.TabStop = true;
+            this.rbutt2.Text = "Fully vaccinated";
+            this.rbutt2.UseVisualStyleBackColor = true;
+            // 
+            // rbutt3
+            // 
+            this.rbutt3.AutoSize = true;
+            this.rbutt3.Location = new System.Drawing.Point(276, 335);
+            this.rbutt3.Name = "rbutt3";
+            this.rbutt3.Size = new System.Drawing.Size(130, 24);
+            this.rbutt3.TabIndex = 41;
+            this.rbutt3.TabStop = true;
+            this.rbutt3.Text = "Not vaccinated";
+            this.rbutt3.UseVisualStyleBackColor = true;
+            // 
+            // Tracingform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.HotPink;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(511, 634);
+            this.Controls.Add(this.rbutt3);
+            this.Controls.Add(this.rbutt2);
+            this.Controls.Add(this.ques1);
+            this.Controls.Add(this.rbutt1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.ques2);
             this.Controls.Add(this.lastN);
             this.Controls.Add(this.box7);
             this.Controls.Add(this.firstN);
@@ -345,11 +373,10 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.savebutton);
-            this.Controls.Add(this.ques6);
             this.Controls.Add(this.ques5);
             this.Controls.Add(this.ques4);
             this.Controls.Add(this.ques3);
-            this.Controls.Add(this.ques1);
+            this.Controls.Add(this.ques2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.box6);
             this.Controls.Add(this.box5);
@@ -363,7 +390,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "Tracingform";
             this.Text = "Contact Tracing Form";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -386,11 +413,10 @@
         private TextBox box5;
         private TextBox box6;
         private Label label7;
-        private CheckBox ques1;
+        private CheckBox ques2;
         private CheckBox ques3;
         private CheckBox ques4;
         private CheckBox ques5;
-        private CheckBox ques6;
         private Button savebutton;
         private Label label8;
         private Label label10;
@@ -398,9 +424,12 @@
         private Label firstN;
         private TextBox box7;
         private Label lastN;
-        private CheckBox ques2;
         private PictureBox pictureBox1;
         private Label label9;
         private Label label11;
+        private RadioButton rbutt1;
+        private Label ques1;
+        private RadioButton rbutt2;
+        private RadioButton rbutt3;
     }
 }

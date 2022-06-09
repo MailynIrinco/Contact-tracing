@@ -4,7 +4,6 @@ C:\Users\irinc\source\repos\Contact tracing\Contact tracing\bin\Debug\net6.0-win
 C:\Users\irinc\source\repos\Contact tracing\Contact tracing\bin\Debug\net6.0-windows\Contact tracing.dll
 C:\Users\irinc\source\repos\Contact tracing\Contact tracing\bin\Debug\net6.0-windows\Contact tracing.pdb
 C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact tracing.csproj.AssemblyReference.cache
-C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact_tracing.Form1.resources
 C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact tracing.csproj.GenerateResource.cache
 C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact tracing.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact tracing.AssemblyInfoInputs.cache
@@ -16,3 +15,4 @@ C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-win
 C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact tracing.genruntimeconfig.cache
 C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\ref\Contact tracing.dll
 C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact_tracing.Properties.Resources.resources
+C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact_tracing.Tracingform.resources
