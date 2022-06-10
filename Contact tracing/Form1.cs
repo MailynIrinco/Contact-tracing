@@ -13,12 +13,13 @@ namespace Contact_tracing
         private void button1_Click(object sender, EventArgs e)
         {
             StreamWriter file = new StreamWriter(@"C:\Users\irinc\OneDrive\Documents\Contact tracing.text");
-            file.WriteLine("Name:" + box1.Text + box2.Text);
+            file.WriteLine("Name:" + box1.Text + " " +box2.Text);
             file.WriteLine("Address:" + box3.Text);
             file.WriteLine("Phone No." + box4.Text);
             file.WriteLine("Age:" + box5.Text);
             file.WriteLine("Date:" + box6.Text);
             file.WriteLine("Time in/out:" + box7.Text);
+            file.WriteLine("Survey:");
             file.WriteLine("1." + ques1.Text);
             file.WriteLine(rbutt1.Text + " - " + rbutt1.Checked);
             file.WriteLine(rbutt2.Text + " - " + rbutt2.Checked); 
@@ -29,7 +30,7 @@ namespace Contact_tracing
             file.WriteLine("5." + ques5.Text + " - " + ques5.Checked);
             file.Close();
 
-            MessageBox.Show("Thank you for answering. Have a Blessed day!","Saved");
+            MessageBox.Show("Thank you for answering. Have a Safe day!","Saved");
         }
-    }
+    }  
 }
