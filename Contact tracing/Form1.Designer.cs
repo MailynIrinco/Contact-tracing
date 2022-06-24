@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tracingform));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,24 +48,22 @@
             this.savebutton = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.firstN = new System.Windows.Forms.Label();
             this.box7 = new System.Windows.Forms.TextBox();
             this.lastN = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.rbutt1 = new System.Windows.Forms.RadioButton();
-            this.ques1 = new System.Windows.Forms.Label();
             this.rbutt2 = new System.Windows.Forms.RadioButton();
             this.rbutt3 = new System.Windows.Forms.RadioButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Contactform = new System.Windows.Forms.Label();
+            this.pic = new System.Windows.Forms.Button();
+            this.vaccbox = new System.Windows.Forms.GroupBox();
+            this.vaccbox.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 89);
+            this.label1.Location = new System.Drawing.Point(10, 131);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 25);
             this.label1.TabIndex = 7;
@@ -75,7 +72,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(12, 146);
+            this.label2.Location = new System.Drawing.Point(12, 183);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 25);
             this.label2.TabIndex = 8;
@@ -85,7 +82,7 @@
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(12, 213);
+            this.label3.Location = new System.Drawing.Point(12, 241);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(216, 25);
             this.label3.TabIndex = 9;
@@ -94,7 +91,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(410, 115);
+            this.label4.Location = new System.Drawing.Point(420, 153);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 25);
             this.label4.TabIndex = 10;
@@ -103,7 +100,7 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(409, 174);
+            this.label5.Location = new System.Drawing.Point(420, 209);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 25);
             this.label5.TabIndex = 11;
@@ -114,50 +111,50 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(395, 222);
+            this.label6.Location = new System.Drawing.Point(395, 270);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 46);
+            this.label6.Size = new System.Drawing.Size(96, 32);
             this.label6.TabIndex = 12;
             this.label6.Text = "Time in/out:";
             // 
             // box1
             // 
-            this.box1.Location = new System.Drawing.Point(12, 116);
+            this.box1.Location = new System.Drawing.Point(12, 153);
             this.box1.Name = "box1";
             this.box1.Size = new System.Drawing.Size(193, 27);
             this.box1.TabIndex = 13;
             // 
             // box2
             // 
-            this.box2.Location = new System.Drawing.Point(211, 116);
+            this.box2.Location = new System.Drawing.Point(211, 153);
             this.box2.Name = "box2";
             this.box2.Size = new System.Drawing.Size(178, 27);
             this.box2.TabIndex = 14;
             // 
             // box3
             // 
-            this.box3.Location = new System.Drawing.Point(12, 174);
+            this.box3.Location = new System.Drawing.Point(12, 211);
             this.box3.Name = "box3";
             this.box3.Size = new System.Drawing.Size(377, 27);
             this.box3.TabIndex = 15;
             // 
             // box4
             // 
-            this.box4.Location = new System.Drawing.Point(12, 241);
+            this.box4.Location = new System.Drawing.Point(12, 270);
             this.box4.Name = "box4";
             this.box4.Size = new System.Drawing.Size(377, 27);
             this.box4.TabIndex = 16;
             // 
             // box5
             // 
-            this.box5.Location = new System.Drawing.Point(460, 115);
+            this.box5.Location = new System.Drawing.Point(492, 151);
             this.box5.Name = "box5";
             this.box5.Size = new System.Drawing.Size(125, 27);
             this.box5.TabIndex = 17;
             // 
             // box6
             // 
-            this.box6.Location = new System.Drawing.Point(460, 174);
+            this.box6.Location = new System.Drawing.Point(492, 209);
             this.box6.Name = "box6";
             this.box6.Size = new System.Drawing.Size(125, 27);
             this.box6.TabIndex = 18;
@@ -165,9 +162,9 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(12, 568);
+            this.label7.Location = new System.Drawing.Point(10, 614);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(487, 54);
+            this.label7.Size = new System.Drawing.Size(522, 54);
             this.label7.TabIndex = 19;
             this.label7.Text = "Note: Note: This form is for safety purposes only, since we are still in the mids" +
     "t of the COVID-19 Pandemic. We take your information confidentially and only use" +
@@ -176,9 +173,9 @@
             // ques2
             // 
             this.ques2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ques2.Location = new System.Drawing.Point(22, 365);
+            this.ques2.Location = new System.Drawing.Point(22, 398);
             this.ques2.Name = "ques2";
-            this.ques2.Size = new System.Drawing.Size(477, 63);
+            this.ques2.Size = new System.Drawing.Size(638, 63);
             this.ques2.TabIndex = 21;
             this.ques2.Text = "Do you feel any symtomps of covid (cough, headache, fever etc.) in a past few day" +
     "s?";
@@ -187,7 +184,7 @@
             // ques3
             // 
             this.ques3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ques3.Location = new System.Drawing.Point(22, 431);
+            this.ques3.Location = new System.Drawing.Point(22, 455);
             this.ques3.Name = "ques3";
             this.ques3.Size = new System.Drawing.Size(385, 30);
             this.ques3.TabIndex = 22;
@@ -197,7 +194,7 @@
             // ques4
             // 
             this.ques4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ques4.Location = new System.Drawing.Point(22, 467);
+            this.ques4.Location = new System.Drawing.Point(22, 501);
             this.ques4.Name = "ques4";
             this.ques4.Size = new System.Drawing.Size(385, 30);
             this.ques4.TabIndex = 23;
@@ -207,7 +204,7 @@
             // ques5
             // 
             this.ques5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ques5.Location = new System.Drawing.Point(22, 492);
+            this.ques5.Location = new System.Drawing.Point(22, 537);
             this.ques5.Name = "ques5";
             this.ques5.Size = new System.Drawing.Size(420, 53);
             this.ques5.TabIndex = 24;
@@ -219,9 +216,9 @@
             this.savebutton.BackColor = System.Drawing.SystemColors.Control;
             this.savebutton.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.savebutton.ForeColor = System.Drawing.Color.Firebrick;
-            this.savebutton.Location = new System.Drawing.Point(505, 601);
+            this.savebutton.Location = new System.Drawing.Point(555, 636);
             this.savebutton.Name = "savebutton";
-            this.savebutton.Size = new System.Drawing.Size(95, 40);
+            this.savebutton.Size = new System.Drawing.Size(105, 43);
             this.savebutton.TabIndex = 25;
             this.savebutton.Text = "Save";
             this.savebutton.UseVisualStyleBackColor = false;
@@ -229,9 +226,9 @@
             // 
             // label8
             // 
-            this.label8.BackColor = System.Drawing.Color.HotPink;
+            this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(12, 287);
+            this.label8.Location = new System.Drawing.Point(10, 300);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(461, 25);
             this.label8.TabIndex = 26;
@@ -239,28 +236,17 @@
             // 
             // label10
             // 
-            this.label10.BackColor = System.Drawing.Color.Pink;
-            this.label10.Location = new System.Drawing.Point(12, 548);
+            this.label10.BackColor = System.Drawing.Color.Crimson;
+            this.label10.Location = new System.Drawing.Point(12, 593);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(602, 11);
+            this.label10.Size = new System.Drawing.Size(648, 10);
             this.label10.TabIndex = 29;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(463, 407);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 138);
-            this.button1.TabIndex = 30;
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // firstN
             // 
             this.firstN.AutoSize = true;
             this.firstN.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.firstN.Location = new System.Drawing.Point(66, 93);
+            this.firstN.Location = new System.Drawing.Point(64, 135);
             this.firstN.Name = "firstN";
             this.firstN.Size = new System.Drawing.Size(62, 15);
             this.firstN.TabIndex = 31;
@@ -268,7 +254,7 @@
             // 
             // box7
             // 
-            this.box7.Location = new System.Drawing.Point(460, 241);
+            this.box7.Location = new System.Drawing.Point(492, 270);
             this.box7.Name = "box7";
             this.box7.Size = new System.Drawing.Size(125, 27);
             this.box7.TabIndex = 32;
@@ -277,103 +263,98 @@
             // 
             this.lastN.AutoSize = true;
             this.lastN.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.lastN.Location = new System.Drawing.Point(184, 93);
+            this.lastN.Location = new System.Drawing.Point(211, 135);
             this.lastN.Name = "lastN";
             this.lastN.Size = new System.Drawing.Size(62, 15);
             this.lastN.TabIndex = 33;
             this.lastN.Text = "Last name";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(-3, -2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(662, 92);
-            this.pictureBox1.TabIndex = 35;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.MediumVioletRed;
-            this.label9.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(410, 25);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(161, 22);
-            this.label9.TabIndex = 36;
-            this.label9.Text = "Contact Tracing";
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.Color.DeepPink;
-            this.label11.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(410, 47);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(78, 22);
-            this.label11.TabIndex = 37;
-            this.label11.Text = "Form";
-            // 
             // rbutt1
             // 
             this.rbutt1.AutoSize = true;
-            this.rbutt1.Location = new System.Drawing.Point(93, 335);
+            this.rbutt1.Location = new System.Drawing.Point(116, 37);
             this.rbutt1.Name = "rbutt1";
-            this.rbutt1.Size = new System.Drawing.Size(125, 24);
+            this.rbutt1.Size = new System.Drawing.Size(129, 24);
             this.rbutt1.TabIndex = 38;
             this.rbutt1.TabStop = true;
             this.rbutt1.Text = "First dose only";
             this.rbutt1.UseVisualStyleBackColor = true;
-            // 
-            // ques1
-            // 
-            this.ques1.AutoSize = true;
-            this.ques1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ques1.Location = new System.Drawing.Point(12, 312);
-            this.ques1.Name = "ques1";
-            this.ques1.Size = new System.Drawing.Size(181, 20);
-            this.ques1.TabIndex = 39;
-            this.ques1.Text = "Are you fully vaccinated?";
+            this.rbutt1.CheckedChanged += new System.EventHandler(this.rbutt1_CheckedChanged);
             // 
             // rbutt2
             // 
             this.rbutt2.AutoSize = true;
-            this.rbutt2.Location = new System.Drawing.Point(254, 335);
+            this.rbutt2.Location = new System.Drawing.Point(277, 37);
             this.rbutt2.Name = "rbutt2";
-            this.rbutt2.Size = new System.Drawing.Size(135, 24);
+            this.rbutt2.Size = new System.Drawing.Size(140, 24);
             this.rbutt2.TabIndex = 40;
             this.rbutt2.TabStop = true;
             this.rbutt2.Text = "Fully vaccinated";
             this.rbutt2.UseVisualStyleBackColor = true;
+            this.rbutt2.CheckedChanged += new System.EventHandler(this.rbutt2_CheckedChanged);
             // 
             // rbutt3
             // 
             this.rbutt3.AutoSize = true;
-            this.rbutt3.Location = new System.Drawing.Point(418, 335);
+            this.rbutt3.Location = new System.Drawing.Point(458, 37);
             this.rbutt3.Name = "rbutt3";
-            this.rbutt3.Size = new System.Drawing.Size(130, 24);
+            this.rbutt3.Size = new System.Drawing.Size(133, 24);
             this.rbutt3.TabIndex = 41;
             this.rbutt3.TabStop = true;
             this.rbutt3.Text = "Not vaccinated";
             this.rbutt3.UseVisualStyleBackColor = true;
+            this.rbutt3.CheckedChanged += new System.EventHandler(this.rbutt3_CheckedChanged);
+            // 
+            // Contactform
+            // 
+            this.Contactform.BackColor = System.Drawing.Color.White;
+            this.Contactform.Font = new System.Drawing.Font("Bahnschrift SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Contactform.ForeColor = System.Drawing.Color.Crimson;
+            this.Contactform.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Contactform.Location = new System.Drawing.Point(151, -1);
+            this.Contactform.Name = "Contactform";
+            this.Contactform.Size = new System.Drawing.Size(523, 117);
+            this.Contactform.TabIndex = 42;
+            this.Contactform.Text = "Contact Tracing Form";
+            this.Contactform.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pic
+            // 
+            this.pic.BackgroundImage = global::Contact_tracing.Properties.Resources.OIP;
+            this.pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pic.Location = new System.Drawing.Point(0, -1);
+            this.pic.Name = "pic";
+            this.pic.Size = new System.Drawing.Size(155, 117);
+            this.pic.TabIndex = 43;
+            this.pic.UseVisualStyleBackColor = true;
+            // 
+            // vaccbox
+            // 
+            this.vaccbox.Controls.Add(this.rbutt2);
+            this.vaccbox.Controls.Add(this.rbutt1);
+            this.vaccbox.Controls.Add(this.rbutt3);
+            this.vaccbox.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.vaccbox.Location = new System.Drawing.Point(22, 328);
+            this.vaccbox.Name = "vaccbox";
+            this.vaccbox.Size = new System.Drawing.Size(595, 73);
+            this.vaccbox.TabIndex = 44;
+            this.vaccbox.TabStop = false;
+            this.vaccbox.Text = "Are you vaccinated?";
+            this.vaccbox.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // Tracingform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.HotPink;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(625, 653);
-            this.Controls.Add(this.rbutt3);
-            this.Controls.Add(this.rbutt2);
-            this.Controls.Add(this.ques1);
-            this.Controls.Add(this.rbutt1);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(674, 691);
+            this.Controls.Add(this.vaccbox);
+            this.Controls.Add(this.pic);
+            this.Controls.Add(this.Contactform);
             this.Controls.Add(this.lastN);
             this.Controls.Add(this.box7);
             this.Controls.Add(this.firstN);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.savebutton);
@@ -396,7 +377,8 @@
             this.Controls.Add(this.label1);
             this.Name = "Tracingform";
             this.Text = "Contact Tracing Form";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.vaccbox.ResumeLayout(false);
+            this.vaccbox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -424,16 +406,14 @@
         private Button savebutton;
         private Label label8;
         private Label label10;
-        private Button button1;
         private Label firstN;
         private TextBox box7;
         private Label lastN;
-        private PictureBox pictureBox1;
-        private Label label9;
-        private Label label11;
         private RadioButton rbutt1;
-        private Label ques1;
         private RadioButton rbutt2;
         private RadioButton rbutt3;
+        private Label Contactform;
+        private Button pic;
+        private GroupBox vaccbox;
     }
 }

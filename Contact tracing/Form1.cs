@@ -4,7 +4,7 @@ namespace Contact_tracing
 {
     public partial class Tracingform : Form
     {
-        
+
         public Tracingform()
         {
             InitializeComponent();
@@ -20,7 +20,7 @@ namespace Contact_tracing
             file.WriteLine("Date:" + box6.Text);
             file.WriteLine("Time in/out:" + box7.Text);
             file.WriteLine("Survey:");
-            file.WriteLine("1." + ques1.Text);
+            file.WriteLine("1." + vaccbox.Text);
             file.WriteLine(rbutt1.Text + " - " + rbutt1.Checked);
             file.WriteLine(rbutt2.Text + " - " + rbutt2.Checked); 
             file.WriteLine(rbutt3.Text + " - " + rbutt3.Checked);
@@ -31,6 +31,23 @@ namespace Contact_tracing
             file.Close();
 
             MessageBox.Show("Thank you for answering. Have a Safe day!","Saved");
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+        }
+
+        private void rbutt1_CheckedChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void rbutt2_CheckedChanged(object sender, EventArgs e)
+        {   
+        }
+
+        private void rbutt3_CheckedChanged(object sender, EventArgs e)
+        {
         }
     }  
 }
