@@ -34,12 +34,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.box1 = new System.Windows.Forms.TextBox();
-            this.box2 = new System.Windows.Forms.TextBox();
-            this.box3 = new System.Windows.Forms.TextBox();
-            this.box4 = new System.Windows.Forms.TextBox();
-            this.box5 = new System.Windows.Forms.TextBox();
-            this.box6 = new System.Windows.Forms.TextBox();
+            this.firstname = new System.Windows.Forms.TextBox();
+            this.lastname = new System.Windows.Forms.TextBox();
+            this.address = new System.Windows.Forms.TextBox();
+            this.number = new System.Windows.Forms.TextBox();
+            this.age = new System.Windows.Forms.TextBox();
+            this.date = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.ques2 = new System.Windows.Forms.CheckBox();
             this.ques3 = new System.Windows.Forms.CheckBox();
@@ -49,7 +49,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.firstN = new System.Windows.Forms.Label();
-            this.box7 = new System.Windows.Forms.TextBox();
+            this.time = new System.Windows.Forms.TextBox();
             this.lastN = new System.Windows.Forms.Label();
             this.rbutt1 = new System.Windows.Forms.RadioButton();
             this.rbutt2 = new System.Windows.Forms.RadioButton();
@@ -117,47 +117,47 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Time in/out:";
             // 
-            // box1
+            // firstname
             // 
-            this.box1.Location = new System.Drawing.Point(12, 153);
-            this.box1.Name = "box1";
-            this.box1.Size = new System.Drawing.Size(193, 27);
-            this.box1.TabIndex = 13;
+            this.firstname.Location = new System.Drawing.Point(12, 153);
+            this.firstname.Name = "firstname";
+            this.firstname.Size = new System.Drawing.Size(193, 27);
+            this.firstname.TabIndex = 13;
             // 
-            // box2
+            // lastname
             // 
-            this.box2.Location = new System.Drawing.Point(211, 153);
-            this.box2.Name = "box2";
-            this.box2.Size = new System.Drawing.Size(178, 27);
-            this.box2.TabIndex = 14;
+            this.lastname.Location = new System.Drawing.Point(211, 153);
+            this.lastname.Name = "lastname";
+            this.lastname.Size = new System.Drawing.Size(178, 27);
+            this.lastname.TabIndex = 14;
             // 
-            // box3
+            // address
             // 
-            this.box3.Location = new System.Drawing.Point(12, 211);
-            this.box3.Name = "box3";
-            this.box3.Size = new System.Drawing.Size(377, 27);
-            this.box3.TabIndex = 15;
+            this.address.Location = new System.Drawing.Point(12, 211);
+            this.address.Name = "address";
+            this.address.Size = new System.Drawing.Size(377, 27);
+            this.address.TabIndex = 15;
             // 
-            // box4
+            // number
             // 
-            this.box4.Location = new System.Drawing.Point(12, 270);
-            this.box4.Name = "box4";
-            this.box4.Size = new System.Drawing.Size(377, 27);
-            this.box4.TabIndex = 16;
+            this.number.Location = new System.Drawing.Point(12, 270);
+            this.number.Name = "number";
+            this.number.Size = new System.Drawing.Size(377, 27);
+            this.number.TabIndex = 16;
             // 
-            // box5
+            // age
             // 
-            this.box5.Location = new System.Drawing.Point(492, 151);
-            this.box5.Name = "box5";
-            this.box5.Size = new System.Drawing.Size(125, 27);
-            this.box5.TabIndex = 17;
+            this.age.Location = new System.Drawing.Point(492, 151);
+            this.age.Name = "age";
+            this.age.Size = new System.Drawing.Size(125, 27);
+            this.age.TabIndex = 17;
             // 
-            // box6
+            // date
             // 
-            this.box6.Location = new System.Drawing.Point(492, 209);
-            this.box6.Name = "box6";
-            this.box6.Size = new System.Drawing.Size(125, 27);
-            this.box6.TabIndex = 18;
+            this.date.Location = new System.Drawing.Point(492, 209);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(125, 27);
+            this.date.TabIndex = 18;
             // 
             // label7
             // 
@@ -252,12 +252,12 @@
             this.firstN.TabIndex = 31;
             this.firstN.Text = "First name";
             // 
-            // box7
+            // time
             // 
-            this.box7.Location = new System.Drawing.Point(492, 270);
-            this.box7.Name = "box7";
-            this.box7.Size = new System.Drawing.Size(125, 27);
-            this.box7.TabIndex = 32;
+            this.time.Location = new System.Drawing.Point(492, 270);
+            this.time.Name = "time";
+            this.time.Size = new System.Drawing.Size(125, 27);
+            this.time.TabIndex = 32;
             // 
             // lastN
             // 
@@ -311,7 +311,7 @@
             this.Contactform.Font = new System.Drawing.Font("Bahnschrift SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Contactform.ForeColor = System.Drawing.Color.Crimson;
             this.Contactform.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Contactform.Location = new System.Drawing.Point(151, -1);
+            this.Contactform.Location = new System.Drawing.Point(150, -1);
             this.Contactform.Name = "Contactform";
             this.Contactform.Size = new System.Drawing.Size(523, 117);
             this.Contactform.TabIndex = 42;
@@ -353,7 +353,7 @@
             this.Controls.Add(this.pic);
             this.Controls.Add(this.Contactform);
             this.Controls.Add(this.lastN);
-            this.Controls.Add(this.box7);
+            this.Controls.Add(this.time);
             this.Controls.Add(this.firstN);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
@@ -363,12 +363,12 @@
             this.Controls.Add(this.ques3);
             this.Controls.Add(this.ques2);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.box6);
-            this.Controls.Add(this.box5);
-            this.Controls.Add(this.box4);
-            this.Controls.Add(this.box3);
-            this.Controls.Add(this.box2);
-            this.Controls.Add(this.box1);
+            this.Controls.Add(this.date);
+            this.Controls.Add(this.age);
+            this.Controls.Add(this.number);
+            this.Controls.Add(this.address);
+            this.Controls.Add(this.lastname);
+            this.Controls.Add(this.firstname);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -376,7 +376,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Tracingform";
-            this.Text = "Contact Tracing Form";
+            this.Text = "Contact Tracing Morm";
+            this.Load += new System.EventHandler(this.Tracingform_Load);
             this.vaccbox.ResumeLayout(false);
             this.vaccbox.PerformLayout();
             this.ResumeLayout(false);
@@ -392,12 +393,12 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private TextBox box1;
-        private TextBox box2;
-        private TextBox box3;
-        private TextBox box4;
-        private TextBox box5;
-        private TextBox box6;
+        private TextBox firstname;
+        private TextBox lastname;
+        private TextBox address;
+        private TextBox number;
+        private TextBox age;
+        private TextBox date;
         private Label label7;
         private CheckBox ques2;
         private CheckBox ques3;
@@ -407,7 +408,7 @@
         private Label label8;
         private Label label10;
         private Label firstN;
-        private TextBox box7;
+        private TextBox time;
         private Label lastN;
         private RadioButton rbutt1;
         private RadioButton rbutt2;
