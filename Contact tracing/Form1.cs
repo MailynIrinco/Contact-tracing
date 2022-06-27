@@ -4,15 +4,17 @@ namespace Contact_tracing
 {
     public partial class Tracingform : Form
     {
-
+        public static Tracingform instance;
         public Tracingform()
         {
             InitializeComponent();
+            instance = this;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string filepath = @"C:\Users\irinc\OneDrive\Documents\Ferson" + date.Text;
+    
+            string filepath = @"C:\Users\irinc\OneDrive\Documents\Ferson_" + date.Text;
             
             StreamWriter contact = new StreamWriter(filepath);
             contact.WriteLine("Name:" + firstname.Text + " " + lastname.Text);            
@@ -32,10 +34,7 @@ namespace Contact_tracing
             contact.WriteLine("5." + ques5.Text + " - " + ques5.Checked);
             contact.Close();
 
-        
-
             MessageBox.Show("Thank you for answering. Have a Safe day!", "Saved");
-            
 
         }
 
@@ -57,6 +56,12 @@ namespace Contact_tracing
 
         private void Tracingform_Load(object sender, EventArgs e)
         {
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();   
+            form.ShowDialog();
 
         }
     }  

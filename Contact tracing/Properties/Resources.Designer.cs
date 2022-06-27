@@ -63,6 +63,46 @@ namespace Contact_tracing.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cba2b_testing {
+            get {
+                object obj = ResourceManager.GetObject("cba2b-testing", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Chicken_joy_1 {
+            get {
+                object obj = ResourceManager.GetObject("Chicken_joy_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Chicken_joy_11 {
+            get {
+                object obj = ResourceManager.GetObject("Chicken_joy_11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Chicken_joy_12 {
+            get {
+                object obj = ResourceManager.GetObject("Chicken_joy_12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap covid_19 {
             get {
                 object obj = ResourceManager.GetObject("covid-19", resourceCulture);
@@ -96,6 +136,26 @@ namespace Contact_tracing.Properties {
         internal static System.Drawing.Bitmap OIP {
             get {
                 object obj = ResourceManager.GetObject("OIP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OIP1 {
+            get {
+                object obj = ResourceManager.GetObject("OIP1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OIP2 {
+            get {
+                object obj = ResourceManager.GetObject("OIP2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
