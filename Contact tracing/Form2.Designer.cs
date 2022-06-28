@@ -1,6 +1,6 @@
 ﻿namespace Contact_tracing
 {
-    partial class Form2
+    partial class informationlist
     {
         /// <summary>
         /// Required designer variable.
@@ -36,12 +36,14 @@
             this.calendar = new System.Windows.Forms.DateTimePicker();
             this.datebox = new System.Windows.Forms.TextBox();
             this.selectdate = new System.Windows.Forms.Button();
-            this.details = new System.Windows.Forms.Button();
+            this.listdetails = new System.Windows.Forms.Button();
             this.lex = new System.Windows.Forms.Label();
             this.may = new System.Windows.Forms.Label();
             this.ric = new System.Windows.Forms.Label();
             this.susane = new System.Windows.Forms.Label();
             this.names = new System.Windows.Forms.Label();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.SuspendLayout();
             // 
             // recobydate
@@ -61,7 +63,7 @@
             this.customers.Name = "customers";
             this.customers.Size = new System.Drawing.Size(152, 26);
             this.customers.TabIndex = 2;
-            this.customers.Text = "List of Customers:";
+            this.customers.Text = "Informations:";
             // 
             // infos
             // 
@@ -80,6 +82,7 @@
             this.allreco.Location = new System.Drawing.Point(22, 391);
             this.allreco.Multiline = true;
             this.allreco.Name = "allreco";
+            this.allreco.ReadOnly = true;
             this.allreco.Size = new System.Drawing.Size(474, 173);
             this.allreco.TabIndex = 4;
             this.allreco.TextChanged += new System.EventHandler(this.allreco_TextChanged);
@@ -115,22 +118,22 @@
             this.selectdate.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.selectdate.Location = new System.Drawing.Point(510, 190);
             this.selectdate.Name = "selectdate";
-            this.selectdate.Size = new System.Drawing.Size(116, 33);
+            this.selectdate.Size = new System.Drawing.Size(144, 33);
             this.selectdate.TabIndex = 9;
             this.selectdate.Text = "Select date:";
             this.selectdate.UseVisualStyleBackColor = true;
             this.selectdate.Click += new System.EventHandler(this.selectdate_Click);
             // 
-            // details
+            // listdetails
             // 
-            this.details.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.details.Location = new System.Drawing.Point(511, 289);
-            this.details.Name = "details";
-            this.details.Size = new System.Drawing.Size(117, 36);
-            this.details.TabIndex = 10;
-            this.details.Text = "Details";
-            this.details.UseVisualStyleBackColor = true;
-            this.details.Click += new System.EventHandler(this.details_Click);
+            this.listdetails.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.listdetails.Location = new System.Drawing.Point(511, 289);
+            this.listdetails.Name = "listdetails";
+            this.listdetails.Size = new System.Drawing.Size(143, 36);
+            this.listdetails.TabIndex = 10;
+            this.listdetails.Text = "List of Details";
+            this.listdetails.UseVisualStyleBackColor = true;
+            this.listdetails.Click += new System.EventHandler(this.details_Click);
             // 
             // lex
             // 
@@ -171,14 +174,29 @@
             // names
             // 
             this.names.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.names.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.names.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.names.Location = new System.Drawing.Point(515, 391);
             this.names.Name = "names";
             this.names.Size = new System.Drawing.Size(113, 26);
             this.names.TabIndex = 15;
             this.names.Text = "Names:";
             // 
-            // Form2
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(470, 180);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(26, 168);
+            this.vScrollBar1.TabIndex = 16;
+            // 
+            // vScrollBar2
+            // 
+            this.vScrollBar2.Location = new System.Drawing.Point(470, 391);
+            this.vScrollBar2.Name = "vScrollBar2";
+            this.vScrollBar2.Size = new System.Drawing.Size(26, 173);
+            this.vScrollBar2.TabIndex = 17;
+            this.vScrollBar2.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar2_Scroll);
+            // 
+            // informationlist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -186,12 +204,14 @@
             this.BackgroundImage = global::Contact_tracing.Properties.Resources.Chicken_joy_12;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(729, 611);
+            this.Controls.Add(this.vScrollBar2);
+            this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.names);
             this.Controls.Add(this.susane);
             this.Controls.Add(this.ric);
             this.Controls.Add(this.may);
             this.Controls.Add(this.lex);
-            this.Controls.Add(this.details);
+            this.Controls.Add(this.listdetails);
             this.Controls.Add(this.selectdate);
             this.Controls.Add(this.datebox);
             this.Controls.Add(this.calendar);
@@ -200,7 +220,7 @@
             this.Controls.Add(this.infos);
             this.Controls.Add(this.customers);
             this.Controls.Add(this.recobydate);
-            this.Name = "Form2";
+            this.Name = "informationlist";
             this.Text = "Customers Informations List";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -216,11 +236,13 @@
         private DateTimePicker calendar;
         private TextBox datebox;
         private Button selectdate;
-        private Button details;
+        private Button listdetails;
         private Label lex;
         private Label may;
         private Label ric;
         private Label susane;
         private Label names;
+        private VScrollBar vScrollBar1;
+        private VScrollBar vScrollBar2;
     }
 }

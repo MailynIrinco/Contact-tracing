@@ -60,7 +60,7 @@ namespace Contact_tracing
         private void button1_Click_1(object sender, EventArgs e)
         {
         
-            Form2 form = new Form2();   
+            informationlist form = new informationlist();   
             form.ShowDialog();
 
         }

@@ -16,4 +16,4 @@ C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-win
 C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\ref\Contact tracing.dll
 C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact_tracing.Properties.Resources.resources
 C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact_tracing.Tracingform.resources
-C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact_tracing.Form2.resources
+C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact_tracing.informationlist.resources
