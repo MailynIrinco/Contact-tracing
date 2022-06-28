@@ -344,9 +344,9 @@
             this.pic.BackColor = System.Drawing.Color.Transparent;
             this.pic.BackgroundImage = global::Contact_tracing.Properties.Resources.OIP;
             this.pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pic.Location = new System.Drawing.Point(468, 548);
+            this.pic.Location = new System.Drawing.Point(470, 537);
             this.pic.Name = "pic";
-            this.pic.Size = new System.Drawing.Size(87, 79);
+            this.pic.Size = new System.Drawing.Size(82, 83);
             this.pic.TabIndex = 43;
             this.pic.UseVisualStyleBackColor = false;
             // 

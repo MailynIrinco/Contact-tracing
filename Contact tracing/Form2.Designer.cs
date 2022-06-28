@@ -32,27 +32,32 @@
             this.customers = new System.Windows.Forms.Label();
             this.infos = new System.Windows.Forms.Label();
             this.allreco = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.pic2 = new System.Windows.Forms.Button();
+            this.calendar = new System.Windows.Forms.DateTimePicker();
+            this.datebox = new System.Windows.Forms.TextBox();
+            this.selectdate = new System.Windows.Forms.Button();
             this.details = new System.Windows.Forms.Button();
+            this.lex = new System.Windows.Forms.Label();
+            this.may = new System.Windows.Forms.Label();
+            this.ric = new System.Windows.Forms.Label();
+            this.susane = new System.Windows.Forms.Label();
+            this.names = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // recobydate
             // 
             this.recobydate.BackColor = System.Drawing.Color.Snow;
-            this.recobydate.Location = new System.Drawing.Point(22, 391);
+            this.recobydate.Location = new System.Drawing.Point(22, 180);
             this.recobydate.Multiline = true;
             this.recobydate.Name = "recobydate";
-            this.recobydate.Size = new System.Drawing.Size(474, 190);
+            this.recobydate.Size = new System.Drawing.Size(474, 168);
             this.recobydate.TabIndex = 1;
             // 
             // customers
             // 
             this.customers.BackColor = System.Drawing.Color.Transparent;
             this.customers.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.customers.Location = new System.Drawing.Point(22, 152);
+            this.customers.Location = new System.Drawing.Point(22, 362);
             this.customers.Name = "customers";
             this.customers.Size = new System.Drawing.Size(152, 26);
             this.customers.TabIndex = 2;
@@ -63,7 +68,7 @@
             this.infos.AutoSize = true;
             this.infos.BackColor = System.Drawing.Color.Transparent;
             this.infos.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.infos.Location = new System.Drawing.Point(22, 365);
+            this.infos.Location = new System.Drawing.Point(22, 154);
             this.infos.Name = "infos";
             this.infos.Size = new System.Drawing.Size(191, 23);
             this.infos.TabIndex = 3;
@@ -72,56 +77,106 @@
             // allreco
             // 
             this.allreco.BackColor = System.Drawing.Color.Snow;
-            this.allreco.Location = new System.Drawing.Point(22, 180);
+            this.allreco.Location = new System.Drawing.Point(22, 391);
             this.allreco.Multiline = true;
             this.allreco.Name = "allreco";
-            this.allreco.Size = new System.Drawing.Size(474, 164);
+            this.allreco.Size = new System.Drawing.Size(474, 173);
             this.allreco.TabIndex = 4;
+            this.allreco.TextChanged += new System.EventHandler(this.allreco_TextChanged);
             // 
-            // button1
+            // pic2
             // 
-            this.button1.BackgroundImage = global::Contact_tracing.Properties.Resources.OIP2;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(583, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 94);
-            this.button1.TabIndex = 5;
-            this.button1.UseVisualStyleBackColor = true;
+            this.pic2.BackgroundImage = global::Contact_tracing.Properties.Resources.OIP2;
+            this.pic2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pic2.Location = new System.Drawing.Point(583, 12);
+            this.pic2.Name = "pic2";
+            this.pic2.Size = new System.Drawing.Size(121, 94);
+            this.pic2.TabIndex = 5;
+            this.pic2.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // calendar
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(290, 38);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(273, 27);
-            this.dateTimePicker1.TabIndex = 7;
+            this.calendar.Location = new System.Drawing.Point(290, 38);
+            this.calendar.Name = "calendar";
+            this.calendar.Size = new System.Drawing.Size(273, 27);
+            this.calendar.TabIndex = 7;
             // 
-            // textBox2
+            // datebox
             // 
-            this.textBox2.Location = new System.Drawing.Point(511, 267);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(151, 34);
-            this.textBox2.TabIndex = 8;
+            this.datebox.Location = new System.Drawing.Point(511, 229);
+            this.datebox.Multiline = true;
+            this.datebox.Name = "datebox";
+            this.datebox.Size = new System.Drawing.Size(143, 34);
+            this.datebox.TabIndex = 8;
+            this.datebox.TextChanged += new System.EventHandler(this.datebox_TextChanged);
             // 
-            // button2
+            // selectdate
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(510, 228);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 33);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Select date:";
-            this.button2.UseVisualStyleBackColor = true;
+            this.selectdate.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.selectdate.Location = new System.Drawing.Point(510, 190);
+            this.selectdate.Name = "selectdate";
+            this.selectdate.Size = new System.Drawing.Size(116, 33);
+            this.selectdate.TabIndex = 9;
+            this.selectdate.Text = "Select date:";
+            this.selectdate.UseVisualStyleBackColor = true;
+            this.selectdate.Click += new System.EventHandler(this.selectdate_Click);
             // 
             // details
             // 
             this.details.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.details.Location = new System.Drawing.Point(511, 391);
+            this.details.Location = new System.Drawing.Point(511, 289);
             this.details.Name = "details";
-            this.details.Size = new System.Drawing.Size(115, 36);
+            this.details.Size = new System.Drawing.Size(117, 36);
             this.details.TabIndex = 10;
             this.details.Text = "Details";
             this.details.UseVisualStyleBackColor = true;
+            this.details.Click += new System.EventHandler(this.details_Click);
+            // 
+            // lex
+            // 
+            this.lex.Location = new System.Drawing.Point(515, 428);
+            this.lex.Name = "lex";
+            this.lex.Size = new System.Drawing.Size(113, 34);
+            this.lex.TabIndex = 11;
+            this.lex.Text = "Lex Lee";
+            this.lex.Click += new System.EventHandler(this.lex_Click);
+            // 
+            // may
+            // 
+            this.may.Location = new System.Drawing.Point(515, 462);
+            this.may.Name = "may";
+            this.may.Size = new System.Drawing.Size(113, 34);
+            this.may.TabIndex = 12;
+            this.may.Text = "May Lee";
+            this.may.Click += new System.EventHandler(this.may_Click);
+            // 
+            // ric
+            // 
+            this.ric.Location = new System.Drawing.Point(515, 496);
+            this.ric.Name = "ric";
+            this.ric.Size = new System.Drawing.Size(113, 34);
+            this.ric.TabIndex = 13;
+            this.ric.Text = "Ric O";
+            this.ric.Click += new System.EventHandler(this.ric_Click);
+            // 
+            // susane
+            // 
+            this.susane.Location = new System.Drawing.Point(515, 530);
+            this.susane.Name = "susane";
+            this.susane.Size = new System.Drawing.Size(113, 34);
+            this.susane.TabIndex = 14;
+            this.susane.Text = "Susane Yee";
+            this.susane.Click += new System.EventHandler(this.susane_Click);
+            // 
+            // names
+            // 
+            this.names.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.names.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.names.Location = new System.Drawing.Point(515, 391);
+            this.names.Name = "names";
+            this.names.Size = new System.Drawing.Size(113, 26);
+            this.names.TabIndex = 15;
+            this.names.Text = "Names:";
             // 
             // Form2
             // 
@@ -131,11 +186,16 @@
             this.BackgroundImage = global::Contact_tracing.Properties.Resources.Chicken_joy_12;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(729, 611);
+            this.Controls.Add(this.names);
+            this.Controls.Add(this.susane);
+            this.Controls.Add(this.ric);
+            this.Controls.Add(this.may);
+            this.Controls.Add(this.lex);
             this.Controls.Add(this.details);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.selectdate);
+            this.Controls.Add(this.datebox);
+            this.Controls.Add(this.calendar);
+            this.Controls.Add(this.pic2);
             this.Controls.Add(this.allreco);
             this.Controls.Add(this.infos);
             this.Controls.Add(this.customers);
@@ -152,10 +212,15 @@
         private Label customers;
         private Label infos;
         private TextBox allreco;
-        private Button button1;
-        private DateTimePicker dateTimePicker1;
-        private TextBox textBox2;
-        private Button button2;
+        private Button pic2;
+        private DateTimePicker calendar;
+        private TextBox datebox;
+        private Button selectdate;
         private Button details;
+        private Label lex;
+        private Label may;
+        private Label ric;
+        private Label susane;
+        private Label names;
     }
 }
