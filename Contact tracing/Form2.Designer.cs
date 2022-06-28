@@ -42,8 +42,6 @@
             this.ric = new System.Windows.Forms.Label();
             this.susane = new System.Windows.Forms.Label();
             this.names = new System.Windows.Forms.Label();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.SuspendLayout();
             // 
             // recobydate
@@ -52,6 +50,7 @@
             this.recobydate.Location = new System.Drawing.Point(22, 180);
             this.recobydate.Multiline = true;
             this.recobydate.Name = "recobydate";
+            this.recobydate.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.recobydate.Size = new System.Drawing.Size(474, 168);
             this.recobydate.TabIndex = 1;
             // 
@@ -83,6 +82,7 @@
             this.allreco.Multiline = true;
             this.allreco.Name = "allreco";
             this.allreco.ReadOnly = true;
+            this.allreco.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.allreco.Size = new System.Drawing.Size(474, 173);
             this.allreco.TabIndex = 4;
             this.allreco.TextChanged += new System.EventHandler(this.allreco_TextChanged);
@@ -116,9 +116,9 @@
             // selectdate
             // 
             this.selectdate.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.selectdate.Location = new System.Drawing.Point(510, 190);
+            this.selectdate.Location = new System.Drawing.Point(511, 190);
             this.selectdate.Name = "selectdate";
-            this.selectdate.Size = new System.Drawing.Size(144, 33);
+            this.selectdate.Size = new System.Drawing.Size(143, 33);
             this.selectdate.TabIndex = 9;
             this.selectdate.Text = "Select date:";
             this.selectdate.UseVisualStyleBackColor = true;
@@ -181,21 +181,6 @@
             this.names.TabIndex = 15;
             this.names.Text = "Names:";
             // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(470, 180);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(26, 168);
-            this.vScrollBar1.TabIndex = 16;
-            // 
-            // vScrollBar2
-            // 
-            this.vScrollBar2.Location = new System.Drawing.Point(470, 391);
-            this.vScrollBar2.Name = "vScrollBar2";
-            this.vScrollBar2.Size = new System.Drawing.Size(26, 173);
-            this.vScrollBar2.TabIndex = 17;
-            this.vScrollBar2.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar2_Scroll);
-            // 
             // informationlist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -203,9 +188,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImage = global::Contact_tracing.Properties.Resources.Chicken_joy_12;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(729, 611);
-            this.Controls.Add(this.vScrollBar2);
-            this.Controls.Add(this.vScrollBar1);
+            this.ClientSize = new System.Drawing.Size(718, 611);
             this.Controls.Add(this.names);
             this.Controls.Add(this.susane);
             this.Controls.Add(this.ric);
@@ -242,7 +225,5 @@
         private Label ric;
         private Label susane;
         private Label names;
-        private VScrollBar vScrollBar1;
-        private VScrollBar vScrollBar2;
     }
 }

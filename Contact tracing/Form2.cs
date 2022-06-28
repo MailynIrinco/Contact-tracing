@@ -73,15 +73,5 @@ namespace Contact_tracing
             allreco.Text = contact.ReadToEnd();
             contact.Close();
         }
-
-        private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
-        {
-
-        }
-
-        private void scroll2_Scroll(object sender, ScrollEventArgs e)
-        {
-            //allreco.Text = (scroll2.Value)ToString);
-        }
     }
 }
