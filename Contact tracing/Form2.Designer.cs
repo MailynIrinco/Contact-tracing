@@ -34,14 +34,14 @@
             this.allreco = new System.Windows.Forms.TextBox();
             this.pic2 = new System.Windows.Forms.Button();
             this.calendar = new System.Windows.Forms.DateTimePicker();
-            this.datebox = new System.Windows.Forms.TextBox();
-            this.selectdate = new System.Windows.Forms.Button();
+            this.filter = new System.Windows.Forms.Button();
             this.listdetails = new System.Windows.Forms.Button();
             this.lex = new System.Windows.Forms.Label();
             this.may = new System.Windows.Forms.Label();
             this.ric = new System.Windows.Forms.Label();
             this.susane = new System.Windows.Forms.Label();
             this.names = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // recobydate
@@ -53,6 +53,7 @@
             this.recobydate.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.recobydate.Size = new System.Drawing.Size(474, 168);
             this.recobydate.TabIndex = 1;
+            this.recobydate.TextChanged += new System.EventHandler(this.recobydate_TextChanged);
             // 
             // customers
             // 
@@ -103,31 +104,23 @@
             this.calendar.Name = "calendar";
             this.calendar.Size = new System.Drawing.Size(273, 27);
             this.calendar.TabIndex = 7;
+            this.calendar.ValueChanged += new System.EventHandler(this.calendar_ValueChanged);
             // 
-            // datebox
+            // filter
             // 
-            this.datebox.Location = new System.Drawing.Point(511, 229);
-            this.datebox.Multiline = true;
-            this.datebox.Name = "datebox";
-            this.datebox.Size = new System.Drawing.Size(143, 34);
-            this.datebox.TabIndex = 8;
-            this.datebox.TextChanged += new System.EventHandler(this.datebox_TextChanged);
-            // 
-            // selectdate
-            // 
-            this.selectdate.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.selectdate.Location = new System.Drawing.Point(511, 190);
-            this.selectdate.Name = "selectdate";
-            this.selectdate.Size = new System.Drawing.Size(143, 33);
-            this.selectdate.TabIndex = 9;
-            this.selectdate.Text = "Select date:";
-            this.selectdate.UseVisualStyleBackColor = true;
-            this.selectdate.Click += new System.EventHandler(this.selectdate_Click);
+            this.filter.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.filter.Location = new System.Drawing.Point(511, 190);
+            this.filter.Name = "filter";
+            this.filter.Size = new System.Drawing.Size(143, 33);
+            this.filter.TabIndex = 9;
+            this.filter.Text = "Filter:";
+            this.filter.UseVisualStyleBackColor = true;
+            this.filter.Click += new System.EventHandler(this.selectdate_Click);
             // 
             // listdetails
             // 
             this.listdetails.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.listdetails.Location = new System.Drawing.Point(511, 289);
+            this.listdetails.Location = new System.Drawing.Point(511, 312);
             this.listdetails.Name = "listdetails";
             this.listdetails.Size = new System.Drawing.Size(143, 36);
             this.listdetails.TabIndex = 10;
@@ -139,7 +132,7 @@
             // 
             this.lex.Location = new System.Drawing.Point(515, 428);
             this.lex.Name = "lex";
-            this.lex.Size = new System.Drawing.Size(113, 34);
+            this.lex.Size = new System.Drawing.Size(139, 34);
             this.lex.TabIndex = 11;
             this.lex.Text = "Lex Lee";
             this.lex.Click += new System.EventHandler(this.lex_Click);
@@ -148,7 +141,7 @@
             // 
             this.may.Location = new System.Drawing.Point(515, 462);
             this.may.Name = "may";
-            this.may.Size = new System.Drawing.Size(113, 34);
+            this.may.Size = new System.Drawing.Size(139, 34);
             this.may.TabIndex = 12;
             this.may.Text = "May Lee";
             this.may.Click += new System.EventHandler(this.may_Click);
@@ -157,7 +150,7 @@
             // 
             this.ric.Location = new System.Drawing.Point(515, 496);
             this.ric.Name = "ric";
-            this.ric.Size = new System.Drawing.Size(113, 34);
+            this.ric.Size = new System.Drawing.Size(139, 34);
             this.ric.TabIndex = 13;
             this.ric.Text = "Ric O";
             this.ric.Click += new System.EventHandler(this.ric_Click);
@@ -166,7 +159,7 @@
             // 
             this.susane.Location = new System.Drawing.Point(515, 530);
             this.susane.Name = "susane";
-            this.susane.Size = new System.Drawing.Size(113, 34);
+            this.susane.Size = new System.Drawing.Size(139, 34);
             this.susane.TabIndex = 14;
             this.susane.Text = "Susane Yee";
             this.susane.Click += new System.EventHandler(this.susane_Click);
@@ -177,9 +170,18 @@
             this.names.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.names.Location = new System.Drawing.Point(515, 391);
             this.names.Name = "names";
-            this.names.Size = new System.Drawing.Size(113, 26);
+            this.names.Size = new System.Drawing.Size(139, 26);
             this.names.TabIndex = 15;
             this.names.Text = "Names:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(511, 229);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(143, 27);
+            this.dateTimePicker1.TabIndex = 16;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged_1);
             // 
             // informationlist
             // 
@@ -189,14 +191,14 @@
             this.BackgroundImage = global::Contact_tracing.Properties.Resources.Chicken_joy_12;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(718, 611);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.names);
             this.Controls.Add(this.susane);
             this.Controls.Add(this.ric);
             this.Controls.Add(this.may);
             this.Controls.Add(this.lex);
             this.Controls.Add(this.listdetails);
-            this.Controls.Add(this.selectdate);
-            this.Controls.Add(this.datebox);
+            this.Controls.Add(this.filter);
             this.Controls.Add(this.calendar);
             this.Controls.Add(this.pic2);
             this.Controls.Add(this.allreco);
@@ -217,13 +219,13 @@
         private TextBox allreco;
         private Button pic2;
         private DateTimePicker calendar;
-        private TextBox datebox;
-        private Button selectdate;
+        private Button filter;
         private Button listdetails;
         private Label lex;
         private Label may;
         private Label ric;
         private Label susane;
         private Label names;
+        private DateTimePicker dateTimePicker1;
     }
 }

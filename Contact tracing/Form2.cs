@@ -12,6 +12,7 @@ namespace Contact_tracing
 {
     public partial class informationlist : Form
     {
+
         public informationlist()
         {
             InitializeComponent();
@@ -19,12 +20,32 @@ namespace Contact_tracing
 
         private void selectdate_Click(object sender, EventArgs e)
         {
-            //if (datebox.Text = @"C:\Users\irinc\OneDrive\Documents\_" + firstname.Text)
-            {
+           
 
+            if (true)
+            {
+                StreamReader contact = new StreamReader(@"C:\Users\irinc\OneDrive\Documents\_Susane");
+                recobydate.Text = contact.ReadToEnd();
+                contact.Close();
             }
-            //datebox.Text = Afile
-            //Afile.Text = recobydate
+            if(true)
+            {
+                StreamReader contact = new StreamReader(@"C:\Users\irinc\OneDrive\Documents\_Lex");
+                recobydate.Text = contact.ReadToEnd();
+                contact.Close();
+            }
+            if (true)
+            {
+                StreamReader contact = new StreamReader(@"C:\Users\irinc\OneDrive\Documents\_May");
+                recobydate.Text = contact.ReadToEnd();
+                contact.Close();
+            }
+             if (!string.IsNullOrEmpty(recobydate.Text))    
+            {
+                StreamReader contact = new StreamReader(@"C:\Users\irinc\OneDrive\Documents\_Ric");
+                recobydate.Text = contact.ReadToEnd();
+                contact.Close();
+            }
         }
 
         private void details_Click(object sender, EventArgs e)
@@ -72,6 +93,42 @@ namespace Contact_tracing
             StreamReader contact = new StreamReader(@"C:\Users\irinc\OneDrive\Documents\_Susane");
             allreco.Text = contact.ReadToEnd();
             contact.Close();
+        }
+
+        private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+
+        }
+
+        private void scroll2_Scroll(object sender, ScrollEventArgs e)
+        {
+            //allreco.scroll.Value = 
+        }
+
+        private void vScrollBar2_Scroll(object sender, ScrollEventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void recobydate_TextChanged(object sender, EventArgs e)
+        {
+            //dateTimePicker1.Value = DateTime.Now;
+
+        }
+
+        private void dateTimePicker1_ValueChanged_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void calendar_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
