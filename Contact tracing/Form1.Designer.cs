@@ -261,11 +261,10 @@
             // 
             this.firstN.AutoSize = true;
             this.firstN.BackColor = System.Drawing.Color.Transparent;
-            this.firstN.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.firstN.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.firstN.Location = new System.Drawing.Point(90, 169);
             this.firstN.Name = "firstN";
-            this.firstN.Size = new System.Drawing.Size(64, 17);
+            this.firstN.Size = new System.Drawing.Size(62, 15);
             this.firstN.TabIndex = 31;
             this.firstN.Text = "First name";
             // 
@@ -281,11 +280,10 @@
             // 
             this.lastN.AutoSize = true;
             this.lastN.BackColor = System.Drawing.Color.Transparent;
-            this.lastN.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lastN.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.lastN.Location = new System.Drawing.Point(212, 169);
             this.lastN.Name = "lastN";
-            this.lastN.Size = new System.Drawing.Size(64, 17);
+            this.lastN.Size = new System.Drawing.Size(62, 15);
             this.lastN.TabIndex = 33;
             this.lastN.Text = "Last name";
             // 

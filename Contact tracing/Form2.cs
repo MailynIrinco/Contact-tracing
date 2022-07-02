@@ -20,15 +20,20 @@ namespace Contact_tracing
 
         private void selectdate_Click(object sender, EventArgs e)
         {
-           
 
-            if (true)
+            while (true)
             {
                 StreamReader contact = new StreamReader(@"C:\Users\irinc\OneDrive\Documents\_Susane");
                 recobydate.Text = contact.ReadToEnd();
                 contact.Close();
             }
-            if(true)
+            if (true)
+            {
+                StreamReader contact = new StreamReader(@"C:\Users\irinc\OneDrive\Documents\_Lex");
+                recobydate.Text = contact.ReadToEnd();
+                contact.Close();
+            }
+            if (true)
             {
                 StreamReader contact = new StreamReader(@"C:\Users\irinc\OneDrive\Documents\_Lex");
                 recobydate.Text = contact.ReadToEnd();
