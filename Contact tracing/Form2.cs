@@ -21,7 +21,7 @@ namespace Contact_tracing
         private void selectdate_Click(object sender, EventArgs e)
         {
 
-            while (true)
+            if (true)
             {
                 StreamReader contact = new StreamReader(@"C:\Users\irinc\OneDrive\Documents\_Susane");
                 recobydate.Text = contact.ReadToEnd();

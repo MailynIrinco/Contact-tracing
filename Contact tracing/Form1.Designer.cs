@@ -59,6 +59,8 @@
             this.checklist = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.timendate = new System.Windows.Forms.GroupBox();
+            this.createQR = new System.Windows.Forms.Button();
+            this.scanqr = new System.Windows.Forms.Button();
             this.vaccbox.SuspendLayout();
             this.timendate.SuspendLayout();
             this.SuspendLayout();
@@ -181,13 +183,14 @@
             // 
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(22, 700);
+            this.label7.Location = new System.Drawing.Point(22, 713);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(591, 38);
+            this.label7.Size = new System.Drawing.Size(605, 45);
             this.label7.TabIndex = 19;
             this.label7.Text = "Note: This form is for safety purposes only, since we are still in the midst of t" +
     "he COVID-19 Pandemic. We take your information confidentially and only use it wh" +
     "en it is needed.";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // ques2
             // 
@@ -239,11 +242,12 @@
             this.savebutton.BackColor = System.Drawing.SystemColors.Control;
             this.savebutton.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.savebutton.ForeColor = System.Drawing.Color.Firebrick;
-            this.savebutton.Location = new System.Drawing.Point(683, 685);
+            this.savebutton.Location = new System.Drawing.Point(707, 700);
             this.savebutton.Name = "savebutton";
-            this.savebutton.Size = new System.Drawing.Size(105, 43);
+            this.savebutton.Size = new System.Drawing.Size(110, 39);
             this.savebutton.TabIndex = 25;
             this.savebutton.Text = "Save";
+            this.savebutton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.savebutton.UseVisualStyleBackColor = false;
             this.savebutton.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -330,7 +334,7 @@
             this.Contactform.Font = new System.Drawing.Font("Bahnschrift SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Contactform.ForeColor = System.Drawing.Color.Crimson;
             this.Contactform.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Contactform.Location = new System.Drawing.Point(318, 21);
+            this.Contactform.Location = new System.Drawing.Point(333, 21);
             this.Contactform.Name = "Contactform";
             this.Contactform.Size = new System.Drawing.Size(347, 74);
             this.Contactform.TabIndex = 42;
@@ -342,9 +346,9 @@
             this.pic.BackColor = System.Drawing.Color.Transparent;
             this.pic.BackgroundImage = global::Contact_tracing.Properties.Resources.OIP;
             this.pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pic.Location = new System.Drawing.Point(470, 537);
+            this.pic.Location = new System.Drawing.Point(538, 560);
             this.pic.Name = "pic";
-            this.pic.Size = new System.Drawing.Size(82, 83);
+            this.pic.Size = new System.Drawing.Size(89, 78);
             this.pic.TabIndex = 43;
             this.pic.UseVisualStyleBackColor = false;
             // 
@@ -367,7 +371,7 @@
             // 
             this.checklist.BackgroundImage = global::Contact_tracing.Properties.Resources.cba2b_testing;
             this.checklist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.checklist.Location = new System.Drawing.Point(683, 12);
+            this.checklist.Location = new System.Drawing.Point(712, 21);
             this.checklist.Name = "checklist";
             this.checklist.Size = new System.Drawing.Size(105, 105);
             this.checklist.TabIndex = 45;
@@ -397,10 +401,36 @@
             this.timendate.ForeColor = System.Drawing.Color.Crimson;
             this.timendate.Location = new System.Drawing.Point(415, 186);
             this.timendate.Name = "timendate";
-            this.timendate.Size = new System.Drawing.Size(316, 155);
+            this.timendate.Size = new System.Drawing.Size(274, 155);
             this.timendate.TabIndex = 47;
             this.timendate.TabStop = false;
             this.timendate.Text = "Date and Time:";
+            // 
+            // createQR
+            // 
+            this.createQR.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.createQR.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.createQR.ForeColor = System.Drawing.Color.Firebrick;
+            this.createQR.Location = new System.Drawing.Point(707, 221);
+            this.createQR.Name = "createQR";
+            this.createQR.Size = new System.Drawing.Size(128, 29);
+            this.createQR.TabIndex = 48;
+            this.createQR.Text = "Create QRCode";
+            this.createQR.UseVisualStyleBackColor = false;
+            this.createQR.Click += new System.EventHandler(this.createQR_Click);
+            // 
+            // scanqr
+            // 
+            this.scanqr.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.scanqr.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.scanqr.ForeColor = System.Drawing.Color.Firebrick;
+            this.scanqr.Location = new System.Drawing.Point(707, 288);
+            this.scanqr.Name = "scanqr";
+            this.scanqr.Size = new System.Drawing.Size(128, 29);
+            this.scanqr.TabIndex = 49;
+            this.scanqr.Text = "Scan QRCode";
+            this.scanqr.UseVisualStyleBackColor = false;
+            this.scanqr.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // Tracingform
             // 
@@ -409,7 +439,9 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Contact_tracing.Properties.Resources.Chicken_joy_1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(801, 751);
+            this.ClientSize = new System.Drawing.Size(850, 767);
+            this.Controls.Add(this.scanqr);
+            this.Controls.Add(this.createQR);
             this.Controls.Add(this.timendate);
             this.Controls.Add(this.checklist);
             this.Controls.Add(this.vaccbox);
@@ -478,5 +510,7 @@
         private Button checklist;
         private Label label9;
         private GroupBox timendate;
+        private Button createQR;
+        private Button scanqr;
     }
 }

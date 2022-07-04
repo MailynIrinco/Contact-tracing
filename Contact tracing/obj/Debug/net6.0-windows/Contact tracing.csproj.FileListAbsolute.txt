@@ -17,3 +17,11 @@ C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-win
 C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact_tracing.Properties.Resources.resources
 C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact_tracing.Tracingform.resources
 C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact_tracing.informationlist.resources
+C:\Users\irinc\source\repos\Contact tracing\Contact tracing\bin\Debug\net6.0-windows\zxing.dll
+C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact_tracing.qrcode.resources
+C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact tracing.csproj.CopyComplete
+C:\Users\irinc\source\repos\Contact tracing\Contact tracing\bin\Debug\net6.0-windows\QRCoder.dll
+C:\Users\irinc\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact_tracing.scanqrc.resources
+C:\Users\irinc\source\repos\Contact tracing\Contact tracing\bin\Debug\net6.0-windows\AForge.dll
+C:\Users\irinc\source\repos\Contact tracing\Contact tracing\bin\Debug\net6.0-windows\AForge.Video.dll
+C:\Users\irinc\source\repos\Contact tracing\Contact tracing\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll

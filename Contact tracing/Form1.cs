@@ -64,5 +64,22 @@ namespace Contact_tracing
             form.ShowDialog();
 
         }
+
+        private void createQR_Click(object sender, EventArgs e)
+        {
+            qrcode form = new qrcode();   
+            form.ShowDialog();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            scanqrc form = new scanqrc();
+            form.ShowDialog();
+        }
     }  
 }
