@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ZXing;
+using QRCoder;
 using System.IO;
 
 namespace Contact_tracing
@@ -26,14 +26,10 @@ namespace Contact_tracing
 
         private void create_Click(object sender, EventArgs e)
         {
-            string qrFileName = namebox.Text;
-            string qrdata = infobox.Text;
-
-            BarcodeWriter writer = new BarcodeWriter();
-            writer.Format = BarcodeFormat.QR_CODE;
-            writer.Write(qrdata);
-            writer.Write(@"C: \Users\irinc\OneDrive\Documents\QR Code" + qrFileName);
-            qrpic.Image = Image.FromFile(@"C: \Users\irinc\OneDrive\Documents\QR Code" + qrFileName);  
+           QRCoder.QRCodeGenerator qc = new QRCoder.QRCodeGenerator();
+            var MyData = qc.CreateQrCode(namebox.Text, QRCodeGenerator.ECCLevel.H);
+            var code = new QRCoder.QRCode(MyData);
+            qrpic.Image = code.GetGraphic(50);
 
         }
 
@@ -44,10 +40,12 @@ namespace Contact_tracing
 
         private void qrcode_Load(object sender, EventArgs e)
         {
-            if (DesignMode)
-            {
-                return;
-            }
+         
+        }
+
+        public void Retrive()
+        {
+            throw new NotImplementedException();    
         }
     }
 }

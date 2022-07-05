@@ -85,10 +85,11 @@
             // qrpic
             // 
             this.qrpic.BackColor = System.Drawing.Color.White;
-            this.qrpic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.qrpic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.qrpic.Location = new System.Drawing.Point(44, 177);
             this.qrpic.Name = "qrpic";
             this.qrpic.Size = new System.Drawing.Size(344, 296);
+            this.qrpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.qrpic.TabIndex = 7;
             this.qrpic.TabStop = false;
             // 

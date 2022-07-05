@@ -32,6 +32,7 @@
             this.scanbox = new System.Windows.Forms.PictureBox();
             this.okbtn = new System.Windows.Forms.Button();
             this.name = new System.Windows.Forms.Label();
+            this.cboDevice = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.scanbox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,11 +71,19 @@
             this.name.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.name.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.name.ForeColor = System.Drawing.Color.Black;
-            this.name.Location = new System.Drawing.Point(130, 18);
+            this.name.Location = new System.Drawing.Point(44, 19);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(153, 27);
             this.name.TabIndex = 3;
             this.name.Text = "QRCode Scanner";
+            // 
+            // cboDevice
+            // 
+            this.cboDevice.FormattingEnabled = true;
+            this.cboDevice.Location = new System.Drawing.Point(216, 20);
+            this.cboDevice.Name = "cboDevice";
+            this.cboDevice.Size = new System.Drawing.Size(151, 28);
+            this.cboDevice.TabIndex = 4;
             // 
             // scanqrc
             // 
@@ -82,6 +91,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(414, 446);
+            this.Controls.Add(this.cboDevice);
             this.Controls.Add(this.name);
             this.Controls.Add(this.okbtn);
             this.Controls.Add(this.scanbox);
@@ -89,6 +99,7 @@
             this.Name = "scanqrc";
             this.Text = "Scan a QRCode";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.scanqrc_FormClosing);
+            this.Load += new System.EventHandler(this.scanqrc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.scanbox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -101,5 +112,6 @@
         private PictureBox scanbox;
         private Button okbtn;
         private Label name;
+        private ComboBox cboDevice;
     }
 }
