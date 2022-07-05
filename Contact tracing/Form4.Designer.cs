@@ -28,17 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.scanbtn = new System.Windows.Forms.Button();
             this.scanbox = new System.Windows.Forms.PictureBox();
             this.okbtn = new System.Windows.Forms.Button();
             this.name = new System.Windows.Forms.Label();
             this.cboDevice = new System.Windows.Forms.ComboBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.scanbox)).BeginInit();
             this.SuspendLayout();
             // 
             // scanbtn
             // 
             this.scanbtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.scanbtn.ForeColor = System.Drawing.Color.DarkRed;
             this.scanbtn.Location = new System.Drawing.Point(56, 383);
             this.scanbtn.Name = "scanbtn";
             this.scanbtn.Size = new System.Drawing.Size(106, 38);
@@ -58,6 +61,7 @@
             // okbtn
             // 
             this.okbtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.okbtn.ForeColor = System.Drawing.Color.DarkRed;
             this.okbtn.Location = new System.Drawing.Point(242, 383);
             this.okbtn.Name = "okbtn";
             this.okbtn.Size = new System.Drawing.Size(106, 38);
@@ -68,9 +72,10 @@
             // name
             // 
             this.name.AutoSize = true;
+            this.name.BackColor = System.Drawing.Color.Transparent;
             this.name.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.name.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.name.ForeColor = System.Drawing.Color.Black;
+            this.name.ForeColor = System.Drawing.Color.DarkRed;
             this.name.Location = new System.Drawing.Point(44, 19);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(153, 27);
@@ -85,12 +90,16 @@
             this.cboDevice.Size = new System.Drawing.Size(151, 28);
             this.cboDevice.TabIndex = 4;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // scanqrc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(414, 446);
+            this.BackColor = System.Drawing.Color.MistyRose;
+            this.ClientSize = new System.Drawing.Size(415, 448);
             this.Controls.Add(this.cboDevice);
             this.Controls.Add(this.name);
             this.Controls.Add(this.okbtn);
@@ -113,5 +122,6 @@
         private Button okbtn;
         private Label name;
         private ComboBox cboDevice;
+        private System.Windows.Forms.Timer timer1;
     }
 }

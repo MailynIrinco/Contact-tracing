@@ -41,6 +41,7 @@
             // create
             // 
             this.create.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.create.ForeColor = System.Drawing.Color.DarkRed;
             this.create.Location = new System.Drawing.Point(140, 491);
             this.create.Name = "create";
             this.create.Size = new System.Drawing.Size(137, 39);
@@ -66,6 +67,8 @@
             // fname
             // 
             this.fname.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.fname.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.fname.ForeColor = System.Drawing.Color.DarkRed;
             this.fname.Location = new System.Drawing.Point(12, 53);
             this.fname.Name = "fname";
             this.fname.Size = new System.Drawing.Size(87, 25);
@@ -76,6 +79,8 @@
             // info
             // 
             this.info.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.info.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.info.ForeColor = System.Drawing.Color.DarkRed;
             this.info.Location = new System.Drawing.Point(12, 117);
             this.info.Name = "info";
             this.info.Size = new System.Drawing.Size(101, 24);
@@ -96,6 +101,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.DarkRed;
             this.label1.Location = new System.Drawing.Point(130, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(163, 28);
@@ -106,7 +112,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightBlue;
+            this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(435, 542);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.qrpic);

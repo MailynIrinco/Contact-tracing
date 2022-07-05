@@ -21,13 +21,20 @@ namespace Contact_tracing
 
         private void label1_Click(object sender, EventArgs e)
         {
+            //string qrFileName = namebox.Text;
+            //string qrdata = infobox.Text;
 
+            //barcodeWriter writer = new BarcodeWriter();
+            //writer.Format = BarcodeFormat.QR_CODE;
+            //writer.Write(qrdata);
+            //writer.Write(@"C: \Users\irinc\OneDrive\Documents\QR Code" + qrFileName);
+            //qrpic.Image = Image.FromFile(@"C: \Users\irinc\OneDrive\Documents\QR Code" + qrFileName);
         }
 
         private void create_Click(object sender, EventArgs e)
         {
            QRCoder.QRCodeGenerator qc = new QRCoder.QRCodeGenerator();
-            var MyData = qc.CreateQrCode(namebox.Text, QRCodeGenerator.ECCLevel.H);
+            var MyData = qc.CreateQrCode(infobox.Text, QRCodeGenerator.ECCLevel.H);
             var code = new QRCoder.QRCode(MyData);
             qrpic.Image = code.GetGraphic(50);
 
